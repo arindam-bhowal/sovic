@@ -1,0 +1,418 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgba(20, 20, 20, 1);
+}
+
+/* --------------Pre-loader---------- */
+
+.loaded {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1001;
+    background-color: rgba(20, 20, 20, 1);
+}
+
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #9370DB;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    z-index: 1002;
+}
+
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #BA55D3;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FF00FF;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* ---------------------------------Pre-loader Ends------------------------------------- */
+
+/* ---------------------------------Navbar------------------------------------- */
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    width: 98.5vw;
+    height: 80px;
+    background-color: #05124c;
+}
+
+/* --------------HamBurger Icon------------ */
+
+#menu {
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #b81568;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+/* ------- Navbar list -------- */
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    font-weight: bold;
+}
+
+.nav li {
+    list-style: none;
+    padding: 16px 0;
+}
+
+.nav {
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+
+/* ----Navbar Bg Color --------  */
+
+.menu-bg, #menu-bar {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #e94498, #b81568);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+#menu-bar {
+    z-index: 2;
+}
+
+.change-bg {
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%, -30%);
+}
+
+.change .bar {
+    background-color: white;
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change {
+    display: block;
+}
+
+/* ---------------------------------Navbar Ends------------------------------------- */
+
+/* ----------------------------------Scrolling Effect------------------------------ */
+
+.scrollContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.scrollContainer .section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    background-blend-mode: multiply;
+}
+
+/* .scrollContainer .section:nth-child(1){
+    background: #fff url(..\assets\Sovic-logo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+/* <!-- -----------------------HERO Section Starts-------------------- --> */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero img {
+    width: 100%;
+    top: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+.hero .heroText {
+    position: relative;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 12rem;
+    font-weight: bold;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin: 35px;
+    font-style: oblique;
+}
+
+/* <!-- -----------------------HERO Section Ends-------------------- --> */
+
+/* <!-- -----------------------Heading Css-------------------- --> */
+
+.heading {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    top: 4em;
+    /* align-items: flex-start; */
+}
+
+.heading h2 {
+    color: #fff;
+    font-size: 6em;
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+}
+
+.heading h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+
+.heading h2:nth-child(2) {
+    color: #03a9f4;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%, 100% {
+        clip-path: polygon( 0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon( 0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
+
+/* <!-- -----------------------Heading Ends-------------------- --> */
+
+/* <!-- -----------------------GAllery Section Starts -------------------- --> */
+#gallery{
+    background: #fff;
+}
+.galleryContainer {
+    width: 1050px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.galleryContainer .gallerycard {
+    position: relative;
+    width: 320px;
+    height: 420px;
+    margin: 15px;
+    overflow: hidden;
+    /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+/* .galleryContainer .gallerycard span{
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    opacity: 0.95;
+    background: #9c27b0;
+    z-index: 1;
+} */
+
+.galleryContainer .gallerycard .imgBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.galleryContainer .gallerycard .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galleryContainer .gallerycard:hover .imgBox img{
+    /* background: #9c27b0; */
+    opacity: 0.3;
+}
+
+.galleryContainer .gallerycard .galleryCardContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galleryContainer .gallerycard .galleryCardContent div {
+    padding: 40px;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.2s;
+}
+
+.galleryContainer .gallerycard:hover .galleryCardContent div {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    /* background: #9c27b0;
+    opacity: 0.95; */
+}
+
+/* <!-- -----------------------GAllery Section Ends-------------------- --> */
+
+
+
+/* <!-- -----------------------Button-------------------- --> */
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* <!-- -----------------------Button Css Ends-------------------- --> */
