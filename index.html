@@ -10,6 +10,9 @@
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
 
+    <!-- ------------------- Vendor and Online Css ------------------ -->
+
+
     <!-- --------------------------Custom Css--------------------------- -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -66,7 +69,7 @@
                     <img src="./assets/hero bg/12.png" data-speed="5" class="layer">
 
 
-                    <h1 class="heroText" data-speed="2">S O V I C</h1>
+                    <h1 class="heroText h1" data-speed="2">S O V I C</h1>
                     <h2 class="heroText" data-speed="-6">The Social Responsibility Cell of Assam Engineering College
                     </h2>
                     <p class="heroText" data-speed="3">You hope, We help</p>
@@ -79,94 +82,486 @@
 
 
             <!-- ------------------------Gallery Section --------------------------- -->
+            <div class="section" id="Gallery">
 
-            <div class="section galleryDiv">
-                <div class="content" id="gallery">
+                <div class="header" id="galleryHeader">
+                    <h1>Gallery</h1>
+                </div>
 
-                    <div class="heading">
-                        <h2>Gallery</h2>
-                        <h2>Gallery</h2>
+                <div class="galleryContainer">
+                    <div class="button" onclick="shiftLeft()"><img src="https://image.ibb.co/mRsEb7/left_arrow.png"
+                            alt=""></div>
+                    <div class="cards-wrapper">
+                        <ul class="cards__container">
+                            <li class="box"><img src="./assets/Events/environment day.jpg" alt=""></li>
+                            <li class="box"><img src="./assets/Events/Cleaniness Drive.jpg" alt=""></li>
+                            <li class="box"><img src="./assets/Events/Sanitary pad distribution.jpg" alt=""></li>
+                            <li class="box"><img src="./assets/Events/Talk webiner.jpg" alt=""></li>
+                            <li class="box"><img src="./assets/Events/vastra Daan.jpg" alt=""></li>
+                        </ul>
+                        <!-- <div class="card__text-content">
+                                <h3 class="card__title">The Famous Five</h3>
+                                <div class="card__summary">The Famous Five is a series of children's adventure novels
+                                    written by English author Enid Blyton. The first book, Five on a Treasure Island,
+                                    was published in 1942.
+                                </div>
+                            </div> -->
                     </div>
+                    <div class="button" onclick="shiftRight()"><img src="https://image.ibb.co/dfPSw7/right_arrow.png"
+                            alt=""></div>
+                </div>
 
-                    <div class="galleryContainer">
-                        <div class="gallerycard">
-                            <span></span>
-                            <div class="imgBox"> <img src="./assets/Events/Cleaniness Drive.jpg" alt=""> </div>
-                            <div class="galleryCardContent">
-                                <div>
-                                    <h2>Card Title</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus consequatur dolore voluptatum ipsum possimus accusamus quia, voluptates sunt commodi magni maiores, expedita repellendus minima atque recusandae inventore. Reprehenderit, doloribus fuga?</p>
+                <!-- ----------------------------Gallery Section Ends---------------------------- -->
+
+
+
+
+                <!-- -----------------------About Us section starts--------------------  -->
+
+
+                <div class="section about">
+                    <div class="about-section">
+                        <div class="inner-container">
+                            <h1>About Us</h1>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iure eaque
+                                repellendus rerum et, saepe ratione quidem odit veniam sit doloremque . Lorem ipsum
+                                dolor
+                                sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+                                dolorum?</p>
+                            <div class="social-icon">
+                                <span><a href="#">
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a></span>
+                                <span><a href="#">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a></span>
+                                <span><a href="#">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ------------------------ About Us Section Ends -------------------- -->
+
+                <div class="section">
+                    <div class="content">
+                        <h2>Section 1 say</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eligendi asperiores
+                            praesentium
+                            aspernatur est, facilis id quis nihil omnis, incidunt officia, officiis ipsam aperiam
+                            maiores
+                            esse nemo excepturi expedita eveniet? Unde expedita repellendus sequi explicabo sit est
+                            ipsam
+                            ratione ea.</p>
+                    </div>
+                </div>
+
+
+                <!-- -----------------------------Event Section Starts--------------------- -->
+                <div class="section eventDiv">
+                    <div class="content" id="event">
+
+                        <div class="header">
+                            <h1>Events</h1>
+                        </div>
+
+                        <div class="eventContainer">
+                            <div class="eventcard">
+                                <span></span>
+                                <div class="imgBox"> <img src="./assets/Events/Cleaniness Drive.jpg" alt=""> </div>
+                                <div class="eventCardContent">
+                                    <div>
+                                        <h2>Card Title</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+                                            consequatur
+                                            dolore voluptatum ipsum possimus accusamus quia, voluptates sunt commodi
+                                            magni
+                                            maiores, expedita repellendus minima atque recusandae inventore.
+                                            Reprehenderit,
+                                            doloribus fuga?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="eventcard">
+                                <span></span>
+                                <div class="imgBox"> <img src="./assets/Events/Sanitary pad distribution.jpg" alt="">
+                                </div>
+                                <div class="eventCardContent">
+                                    <div>
+                                        <h2>Card Title</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+                                            consequatur
+                                            dolore voluptatum ipsum possimus accusamus quia, voluptates sunt commodi
+                                            magni
+                                            maiores, expedita repellendus minima atque recusandae inventore.
+                                            Reprehenderit,
+                                            doloribus fuga?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="eventcard">
+                                <span></span>
+                                <div class="imgBox"> <img src="./assets/Events/environment day.jpg" alt=""> </div>
+                                <div class="eventCardContent">
+                                    <div>
+                                        <h2>Card Title</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+                                            consequatur
+                                            dolore voluptatum ipsum possimus accusamus quia, voluptates sunt commodi
+                                            magni
+                                            maiores, expedita repellendus minima atque recusandae inventore.
+                                            Reprehenderit,
+                                            doloribus fuga?</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="gallerycard">
-                            <span></span>
-                            <div class="imgBox"> <img src="./assets/Events/Sanitary pad distribution.jpg" alt=""> </div>
-                            <div class="galleryCardContent">
-                                <div>
-                                    <h2>Card Title</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus consequatur dolore voluptatum ipsum possimus accusamus quia, voluptates sunt commodi magni maiores, expedita repellendus minima atque recusandae inventore. Reprehenderit, doloribus fuga?</p>
+
+                        <div class="button">
+                            <a href="#">
+                                <span></span>
+                                <span></span>
+                                See More
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- -----------------------------Event Section Ends--------------------- -->
+
+
+
+                <!-- -----------------------------Collaborators Section Starts--------------------- -->
+                <div class="section logo-slider">
+                    <div class="content">
+                        <h2>Section 1 say</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eligendi asperiores
+                            praesentium
+                            aspernatur est, facilis id quis nihil omnis, incidunt officia, officiis ipsam aperiam
+                            maiores
+                            esse nemo excepturi expedita eveniet? Unde expedita repellendus sequi explicabo sit est
+                            ipsam
+                            ratione ea.</p>
+                    </div>
+                </div>
+
+
+
+                <!-- -----------------------------COllaboratiors Section Ends--------------------- -->
+
+
+
+
+                <!-- ------------------------ Teams Section Ends -------------------- -->
+
+                <div class="section teams">
+
+                    <div class="header">
+                        <h1>Our Team</h1>
+                    </div>
+                    <div class="teamContainer">
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgBx">
+                                    <img src="./assets/Team/president.jpg" alt="">
+                                </div>
+                                <div class="contentBx">
+                                    <h4>Gourangon Gogoi</h4>
+                                    <h5>President</h5>
+                                </div>
+                                <div class="sci">
+                                    <a href="#">
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a>
+                                    <a href="#">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                    <a href="#">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="gallerycard">
-                            <span></span>
-                            <div class="imgBox"> <img src="./assets/Events/environment day.jpg" alt=""> </div>
-                            <div class="galleryCardContent">
-                                <div>
-                                    <h2>Card Title</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus consequatur dolore voluptatum ipsum possimus accusamus quia, voluptates sunt commodi magni maiores, expedita repellendus minima atque recusandae inventore. Reprehenderit, doloribus fuga?</p>
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgBx">
+                                    <img src="./assets/Team/event-manager.jpg" alt="">
+                                </div>
+                                <div class="contentBx">
+                                    <h4>Koushik Mohon</h4>
+                                    <h5>Event-Manager</h5>
+                                </div>
+                                <div class="sci">
+                                    <a href="#">
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a>
+                                    <a href="#">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                    <a href="#">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
                                 </div>
                             </div>
                         </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgBx">
+                                    <img src="./assets/Team/developer.jpg" alt="">
+                                </div>
+                                <div class="contentBx">
+                                    <h4>Kaushik Baurah</h4>
+                                    <h5>Developer</h5>
+                                </div>
+                                <div class="sci">
+                                    <a href="#">
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a>
+                                    <a href="#">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                    <a href="#">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                     <div class="button">
                         <a href="#">
                             <span></span>
                             <span></span>
-                            <span></span>
-                            <span></span>
                             See More
+                            <span></span>
+                            <span></span>
                         </a>
+                    </div>
+                </div>
+                <!-- ------------------------Teams Section Ends------------------ -->
+
+
+
+                <!-- ------------------------Our-Founder Section Ends------------------ -->
+
+
+
+                <div class="section founder">
+
+                    <div class="founderContainer">
+                        <div class="content-section">
+                            <div class="title">
+                                <h1>Our Founders</h1>
+                            </div>
+                            <div class="content">
+                                <h3>" Lorem ipsum dolor sit amet, consectetur adipisicing" </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat.</p>
+
+                            </div>
+
+                            <!-- <div class="social">
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </div> -->
+                        </div>
+                        <div class="image-section">
+                            <img src="./assets/Team/president.jpg">
+                        </div>
                     </div>
 
 
+
                 </div>
+
+                <!-- ------------------------Our-Founder Section Ends------------------ -->
+
+
+
+                <!-- ------------------------Testimonial Section------------------ -->
+
+                <div class="section testimonial">
+
+                    <div class="header">
+                        <h1>TESTIMONIALS</h1>
+                    </div>
+
+                    <div class="container">
+                        <div class="Tbox">
+                            <div id="content">
+                                <img class="quote" src="./assets/testimonials/img.png" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis, odit
+                                    quae
+                                    quaerat quos,voluptas.</p>
+                                <img src="./assets/testimonials/user1.jpg" class="user">
+                                <h3>Arindam Bhowal</h3>
+                            </div>
+                        </div>
+                        <div class="Tbox">
+                            <div id="content">
+                                <img class="quote" src="./assets/testimonials/img.png" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis, odit
+                                    quae
+                                    quaerat quos,voluptas.</p>
+                                <img src="./assets/testimonials/user2.jpg" class="user">
+                                <h3>Kaushik Mohan</h3>
+                            </div>
+                        </div>
+                        <div class="Tbox">
+                            <div id="content">
+                                <img class="quote" src="./assets/testimonials/img.png" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis, odit
+                                    quae
+                                    quaerat quos,voluptas.</p>
+                                <img src="./assets/testimonials/user3.jpg" class="user">
+                                <h3>Emon Baruah</h3>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+                <!-------------------------Testimonial Section Ends-------------------- -->
+
+
+
+                <!-- -----------------------Contact Section Ends--------------------  -->
+
+                <div class="section contact">
+                    <div class="content" id="contact">
+                        <h2>Contact Us</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dolorem? Odio
+                            consequuntur,
+                            quibusdam repellendus hic molestias
+                        <p>
+                    </div>
+                    <div class="contactContainer">
+                        <div class="contactInfo">
+                            <div class="cBox">
+                                <div class="icon">
+                                    <ion-icon name="location-outline"></ion-icon>
+                                </div>
+                                <div class="text">
+                                    <h3>Address</h3>
+                                    <p>Assam Engineering College, <br> Jalukbari, Assam, <br>Ghy-781171</p>
+                                </div>
+                            </div>
+                            <div class="cBox">
+                                <div class="icon">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                </div>
+                                <div class="text">
+                                    <h3>Phone</h3>
+                                    <p>+91-8152525145</p>
+                                </div>
+                            </div>
+                            <div class="cBox">
+                                <div class="icon">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                </div>
+                                <div class="text">
+                                    <h3>Email</h3>
+                                    <p>sovic@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contactForm">
+                            <form>
+                                <h2>Send Message</h2>
+                                <div class="inputBox">
+                                    <input type="text" name="" required="required">
+                                    <span>Full Name</span>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="text" name="" required="required">
+                                    <span>E-mail</span>
+                                </div>
+                                <div class="inputBox">
+                                    <textarea name="" required='required'></textarea>
+                                    <span>Type Your Message....</span>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- -----------------------Contact Section Ends--------------------  -->
+
+
+
+                <!-- ------------------Footer---------------- -->
+                <div class="section">
+                    <div class="content">
+                        <div class='Footer'>
+                            <footer class="footer">
+                                <div class="waves">
+                                    <div class="wave" id="wave1"></div>
+                                    <div class="wave" id="wave2"></div>
+                                    <div class="wave" id="wave3"></div>
+                                    <div class="wave" id="wave4"></div>
+                                </div>
+                                <ul class="social-icon">
+                                    <li class="social-icon__item"><a class="social-icon__link" href="#">
+                                            <ion-icon name="logo-facebook"></ion-icon>
+                                        </a></li>
+                                    <li class="social-icon__item"><a class="social-icon__link" href="#">
+                                            <ion-icon name="logo-twitter"></ion-icon>
+                                        </a></li>
+                                    <li class="social-icon__item"><a class="social-icon__link" href="#">
+                                            <ion-icon name="logo-linkedin"></ion-icon>
+                                        </a></li>
+                                    <li class="social-icon__item"><a class="social-icon__link" href="#">
+                                            <ion-icon name="logo-instagram"></ion-icon>
+                                        </a></li>
+                                </ul>
+                                <ul class="menu">
+                                    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+                                </ul>
+                                <p>&copy;2021 SOVIC | All Rights Reserved</p>
+                            </footer>
+                            <script type="module"
+                                src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ------------------------Footer section Ends-------------------- -->
+
+
             </div>
 
 
-            <!-- -----------------------Gallery Section Ends--------------------  -->
 
-
-            <div class="section">
-                <div class="content">
-                    <h2>Section 1 say</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eligendi asperiores praesentium
-                        aspernatur est, facilis id quis nihil omnis, incidunt officia, officiis ipsam aperiam maiores
-                        esse nemo excepturi expedita eveniet? Unde expedita repellendus sequi explicabo sit est ipsam
-                        ratione ea.</p>
-                </div>
-            </div>
-            <div class="section">
-                <div class="content">
-                    <h2>Section 1 say</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eligendi asperiores praesentium
-                        aspernatur est, facilis id quis nihil omnis, incidunt officia, officiis ipsam aperiam maiores
-                        esse nemo excepturi expedita eveniet? Unde expedita repellendus sequi explicabo sit est ipsam
-                        ratione ea.</p>
-                </div>
-            </div>
         </div>
-        <!-- -----------------------Hero Section-------------------- -->
+        <!-- ------------------------Vendor and Online Js------------------------ -->
 
 
-    </div>
-    <!-- ------------------------Vendor and Online Js------------------------ -->
-    
-
-    <!-- -----------------------Custom Js------------------------- -->
-    <script src="./js/script.js"></script>
+        <!-- -----------------------Custom Js------------------------- -->
+        <script src="./js/script.js"></script>
 </body>
 
 </html>
